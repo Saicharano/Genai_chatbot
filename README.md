@@ -37,6 +37,9 @@ Environment Management: python-dotenv
 Project Structure :
 .
 ├── test.py                # Main Streamlit app
-├── .env                   # Environment variables
+
+├── .env                   # Environment 
+
 ├── requirements.txt       # Dependencies
+
 └── README.md              # Project documentation
