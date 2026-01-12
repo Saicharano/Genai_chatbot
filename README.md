@@ -36,6 +36,7 @@ Environment Management: python-dotenv
 
 Project Structure :
 .
+
 ├── test.py                # Main Streamlit app
 
 ├── .env                   # Environment 
