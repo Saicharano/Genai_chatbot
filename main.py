@@ -1,5 +1,6 @@
 #import ChatOllama
 import streamlit as st
+import os
 from langchain_groq import ChatGroq
 from PyPDF2 import PdfReader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
@@ -13,6 +14,8 @@ from transformers import pipeline
 from langchain_community.llms import HuggingFacePipeline
 from langchain_ollama import ChatOllama
 
+from dotenv import load_dotenv
+load_dotenv()
 st.header("Sai Charan's ChatBot")
 
 with st.sidebar:
@@ -45,7 +48,7 @@ if file is not None:
     llm = ChatGroq(
         temperature = 0,
         model="llama-3.3-70b-versatile",
-        groq_api_key="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"
+        groq_api_key=os.getenv("GROQ_API_KEY")
     )
     prompt = ChatPromptTemplate.from_template(
         """
