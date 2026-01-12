@@ -1,0 +1,11 @@
+[project]
+name = "genai-chatbot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain-groq>=1.1.1",
+    "langchian>=0.2.5",
+    "streamlit>=1.52.2",
+]
